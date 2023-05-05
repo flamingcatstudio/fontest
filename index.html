@@ -1,0 +1,18 @@
+<div style="display: grid; grid-template-rows: 50px 50px; grid-template-columns: 400px 100px;">
+    <textarea dir="rtl" id="a" style="resize: none;"></textarea>
+    <button onclick="foo()"></button>
+    <textarea readonly dir="rtl" id="b" style="resize: none; font-family: Square Kufic;"></textarea>
+</div>
+
+<style>
+    @font-face {
+        font-family: Square Kufic;
+        src: url(./SquareKufic-Regular-v110.ttf);
+    }
+</style>
+
+<script>
+    function foo() {
+        document.getElementById("b").value = document.getElementById("a").value
+    }
+</script>
